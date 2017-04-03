@@ -106,16 +106,16 @@ body, tw-story
 }
 
 body {
-background-color: black;
+background-color: #262526;
 color: darkgrey;
 font-size: 125%;
 }
 
 a {
-color: darkgrey;
+color: #F2F2F2;
 }
 a:hover {
-color: crimson;
+color: #F60A20;
 text-decoration: none;
 }
 
@@ -127,7 +127,47 @@ display: none;
 margin-left: 3.5em;
 }
 
+@-webkit-keyframes rumble {
+	50% {
+		-webkit-transform: translateY(-.2em);
+		transform: translateY(-.2em)
+	}
+}
+@keyframes rumble {
+	50% {
+		-webkit-transform: translateY(-.2em);
+		transform: translateY(-.2em)
+	}
+}
+.rumble {
+	-webkit-animation: rumble linear 0.1s 0s infinite;
+	animation: rumble linear 0.1s 0s infinite;
+	display:inline-block;
+  	color: #F60A20;
+}
+
+@-webkit-keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.2em);
+		transform: translateX(0.2em)
+	}
+}
+@keyframes shudder {
+	50% {
+		-webkit-transform: translateX(0.2em);
+		transform: translateX(0.2em)
+	}
+}
+.shudder {
+	-webkit-animation: shudder linear 0.1s 0s infinite;
+	animation: shudder linear 0.1s 0s infinite;
+	display: inline-block;
+  	color: #F60A20;
+}
+
 body.start .passage{
+  color: #404040;
+  font-weight: bold;
   text-align: center;
   font-size: 40px;
   left: 0;
@@ -143,25 +183,24 @@ text-align:center;
 }
 
 .blood {
-  color:crimson;
+  color: #F60A20;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 </script><tw-passagedata pid="1" name="Home Page" tags="start" position="417,113">
 
 [[Enter]]</tw-passagedata><tw-passagedata pid="2" name="Enter" tags="satanic" position="421,273">&lt;&lt;audio creepy loop volume 0.10 fadeto 0.75&gt;&gt;
 
-&lt;blockquote&gt;
-@@color:white;
+&gt;&gt;@@color:#F2F2F2;
 The Beatles were an Illuminati creation. 
 Their songs were written for them and 
 handlers scripted their actions and words.
 They demonstrate that popular culture is really mind control.
 @@
-&lt;/blockquote&gt;
-
 
 I bought all the Beatles albums when I was a teenager. I loved the music but I always felt that something was wrong. The songs were melodically perfect but lacked emotional resonance. Alas, now I know why: the group was an Illuminati creation.
 
@@ -177,7 +216,7 @@ They hid their @@.blood;satanic m@@e@@.blood;s@@sa@@.blood;g@@e@@.blood;s@@ with
 
 After learning this information about the band, I listened to the music again. Now that I can hear the malevolent agenda behind the songs; they&#x27;re ruined for me.
 
-With the assistance of my son and his friends, I have attempted to @@.blood;encode a message@@ within an app called @@.blood;Snapchat@@. This message is what I believe was one of many code words that would &quot;activate&quot; the band, and thus formally begin their psychological tactics upon hearing the phrase, with this particular phrase being utilized by MI6 in the late 60s.
+With the assistance of my son and his friends, I have attempted to @@.blood;encode a message@@ within an app called @@.shudder;Snapchat@@. This message is what I believe was one of many code words that would &quot;activate&quot; the band, and thus formally begin their psychological tactics upon hearing the phrase, with this particular phrase being utilized by MI6 in the late 60s.
 
 Good luck, and may you continue to seek out the truth.
 
